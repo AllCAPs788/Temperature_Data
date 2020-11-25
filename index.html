@@ -9,22 +9,17 @@
     <title>Landing Page</title>
 
   </head>
-
+<!-- add box around website name -->
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../Visualization/cloudiness.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../comparison.html">Comparisons</a>
-        </li>
+      <ul class="navbar-nav ml-auto">
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="../Visualization/max_temp.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
@@ -37,14 +32,15 @@
             <a class="dropdown-item" href="../Visualization/wind.html">Windiness</a>
           </div>
         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../comparison.html">Comparisons</a>
+          </li>
+               
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="../dataset.html">Data</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
   </nav>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -56,19 +52,30 @@
    
     
     <p>The purpose of this project was to compare the city latitudes to four distinct variables that will be visualized. For each visualization, the x-axis is the latitude of a given cities, and the y-axis will vary. </p>   
-        <h2>Visualizations</h2>    
-    <a href="Visualization/cloudiness.html">Cloudiness</a><br>
-    <a href="Visualization/humidity.html">Humidity</a><br>
-    <a href="Visualization/max_temp.html">Temperatures</a><br>
-    <a href="Visualization/wind.html">Windiness</a>
+            
     
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-4">
+              <div class="media">
+                <img src="../Assets/images/lat_temp.png" class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0"> Latitude vs. Cloudiness</h5>
+                  As can be seen from the presented table, tne percentage of cloudiness is densely located at the extremes of each axes.    </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <h2>Visualizations</h2>
+              <a href="Visualization/cloudiness.html"><img src="../Assets/images/lat_clouds.png" alt=""></a>
+              <a href="Visualization/humidity.html"><img src="../Assets/images/humidity.png"></a>
+              <a href="Visualization/max_temp.html"><img src="../Assets/images/lat_temp.png"></a>
+              <a href="Visualization/wind.html"><img src="../Assets/images/wind_speed.png"></a>
+            </div>
+          </div>
+        </div>
   
   
-    <a href="Visualization/cloudiness.html"><img src="../Assets/images/lat_clouds.png" alt=""></a>
-    <a href="Visualization/humidity.html"><img src="../Assets/images/humidity.png"></a>
-    <a href="Visualization/max_temp.html"><img src="../Assets/images/lat_temp.png"></a>
-    <a href="Visualization/wind.html"><img src="../Assets/images/wind_speed.png"></a>
-  
+    
     
         
 </body>
